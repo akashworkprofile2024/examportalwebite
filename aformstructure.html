@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Registeration</title>
+</head>
+
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous'></script>
+
+
+
+<style>
+
+#backimagereg{
+    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+   
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 1px 29px -4px rgba(0,0,0,1);
+-moz-box-shadow: 0px 1px 29px -4px rgba(0,0,0,1);
+box-shadow: 0px 1px 29px -4px rgba(0,0,0,1);
+}
+
+header{
+    color: white;
+}
+
+
+#form-container{
+    max-width: 700px;
+   margin: auto; 
+}
+
+
+.btn-config{         
+                    
+                    background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+                    margin: 10px;
+                    padding: 15px 45px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    background-size: 200% auto;
+                    color: white;            
+                    /* box-shadow: 0 0 5px #000000; */
+                    border-radius: 10px;
+                    display: block;
+        }
+        
+        .btn-config:hover {
+                    background-position: right center; /* change the direction of the change here */
+                    color: #fff;
+                    text-decoration: none;
+                  }
+
+</style>
+
+
+<body>
+
+    <div class="container" id="form-container" >  
+        
+        <div  class="row custom-row ">
+                                   
+             <div id="backimagereg" class="col-*-*">
+                <div class=" h2 text-center text-white mt-3" style="font-size: x-larger;">Admin Registration</div> 
+               
+                <form action="admin_connect.php" enctype="multipart/form-data" method="post">
+                
+                
+                    <div class="row g-2 ">  
+                
+                        <!-- Admin Name   -->
+                        <header><h5 class="mt-2">Name</h4></header>
+                            
+                            <div class="col form-floating">
+                             <input type="text" class=" form-control form-control-md" id="name" name="name"  placeholder="" >
+                             <label for="name">First Name</label>
+                         </div> 
+                       
+                         <!-- Admin Last Name  -->
+                       
+                         <div class="col form-floating">
+                             <input type="text" class="form-control form-control-md" id="lname" name="lname" placeholder="" >
+                             <label for="lname">Last Name</label>
+                         </div>
+                    </div>
+
+
+                    <!-- Admin Age -->
+                    <header><h5 class="mt-2">Age</h4></header>
+                        <div class="form-floating">
+                            <input type="tel" class="form-control" id="age"  name="age" placeholder="">
+                            <label for="age" class="form-label">Age</label>
+                        </div>
+
+
+                        <!-- Admin Phone Number  -->
+
+                    <header><h5 class="mt-2">Phone</h4></header>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control form-control-md" id="phone" name="phone" placeholder="">
+                        <label for="phone" class="form-label">Enter Mobile / TelePhone</label>
+                    </div>
+
+
+             
+
+                        <!-- Admin Address  -->
+
+                            <header><h5 class="mt-3">Address</h4></header>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control " id="address" name="address" placeholder="Enter Address">
+                                    <label for="address" class="form-label">Enter Address</label> 
+                                   
+                                </div> 
+
+
+                         <div class="row g-2 mb-4">  
+
+
+                         <!-- Student State -->
+                         <header><h5 class="mt-3">State / City</h4></header>
+                                
+                            <div class="col mt-1">
+                                <div class="form-floating"> 
+                                    <select class="form-select form-select-md" name="state" id="state">
+                                        <option value="-- -- --">-- -- --</option>
+                                        <option value="andhra-pradesh">Andhra Pradesh</option>
+                                        <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                        <option value="assam">Assam</option>
+                                        <option value="bihar">Bihar</option>
+                                        <option value="chhattisgarh">Chhattisgarh</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="gujarat">Gujarat</option>
+                                        <option value="haryana">Haryana</option>
+                                        <option value="himachal-pradesh">Himachal Pradesh</option>
+                                        <option value="jharkhand">Jharkhand</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="madhya-pradesh">Madhya Pradesh</option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="manipur">Manipur</option>
+                                        <option value="meghalaya">Meghalaya</option>
+                                        <option value="mizoram">Mizoram</option>
+                                        <option value="nagaland">Nagaland</option>
+                                        <option value="odisha">Odisha</option>
+                                        <option value="punjab">Punjab</option>
+                                        <option value="rajasthan">Rajasthan</option>
+                                        <option value="sikkim">Sikkim</option>
+                                        <option value="tamil-nadu">Tamil Nadu</option>
+                                        <option value="telangana">Telangana</option>
+                                        <option value="tripura">Tripura</option>
+                                        <option value="uttar-pradesh">Uttar Pradesh</option>
+                                        <option value="uttarakhand">Uttarakhand</option>
+                                        <option value="west-bengal">West Bengal</option>
+                                        <option value="andaman-nicobar">Andaman and Nicobar Islands</option>
+                                        <option value="chandigarh">Chandigarh</option>
+                                        <option value="dadra-nagar-haveli-daman-diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="lakshadweep">Lakshadweep</option>
+                                        <option value="puducherry">Puducherry</option>
+                                        <option value="ladakh">Ladakh</option>
+                                        <option value="jammu-kashmir">Jammu and Kashmir</option>
+                                    </select>
+                                    <label for="state" class="form-label">Select State</label>
+                                   </div>
+                    
+                            </div> 
+                       
+                         <!-- Student City  -->
+                        
+                         <div class="col mt-1">
+                            <div class="form-floating"> 
+                                <select class="form-select" name="city" id="city">
+                                    <option value="-- -- --">-- -- --</option>
+                                    <option value="mumbai">Mumbai</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="bangalore">Bangalore</option>
+                                    <option value="hyderabad">Hyderabad</option>
+                                    <option value="ahmedabad">Ahmedabad</option>
+                                    <option value="chennai">Chennai</option>
+                                    <option value="kolkata">Kolkata</option>
+                                    <option value="surat">Surat</option>
+                                    <option value="pune">Pune</option>
+                                    <option value="jaipur">Jaipur</option>
+                                    <option value="lucknow">Lucknow</option>
+                                    <option value="kanpur">Kanpur</option>
+                                    <option value="nagpur">Nagpur</option>
+                                    <option value="indore">Indore</option>
+                                    <option value="thane">Thane</option>
+                                    <option value="bhopal">Bhopal</option>
+                                    <option value="visakhapatnam">Visakhapatnam</option>
+                                    <option value="patna">Patna</option>
+                                    <option value="vadodara">Vadodara</option>
+                                    <option value="ghaziabad">Ghaziabad</option>
+                                    <option value="ludhiana">Ludhiana</option>
+                                    <option value="agra">Agra</option>
+                                    <option value="nashik">Nashik</option>
+                                    <option value="faridabad">Faridabad</option>
+                                    <option value="meerut">Meerut</option>
+                                    <option value="rajkot">Rajkot</option>
+                                    <option value="kalyan">Kalyan</option>
+                                    <option value="vasai-virar">Vasai-Virar</option>
+                                    <option value="varanasi">Varanasi</option>
+                                    <option value="srinagar">Srinagar</option>
+                                    <option value="aurangabad">Aurangabad</option>
+                                    <option value="dhanbad">Dhanbad</option>
+                                    <option value="amritsar">Amritsar</option>
+                                    <option value="navi-mumbai">Navi Mumbai</option>
+                                    <option value="allahabad">Allahabad</option>
+                                    <option value="howrah">Howrah</option>
+                                    <option value="ranchi">Ranchi</option>
+                                    <option value="gwalior">Gwalior</option>
+                                    <option value="jabalpur">Jabalpur</option>
+                                    <option value="coimbatore">Coimbatore</option>
+                                    <option value="vijayawada">Vijayawada</option>
+                                    <option value="jodhpur">Jodhpur</option>
+                                    <option value="madurai">Madurai</option>
+                                    <option value="raipur">Raipur</option>
+                                    <option value="kota">Kota</option>
+                                    <option value="guwahati">Guwahati</option>
+                                    <option value="chandigarh">Chandigarh</option>
+                                    <option value="solapur">Solapur</option>
+                                    <option value="hubballi-dharwad">Hubballi-Dharwad</option>
+                                    <option value="tiruchirappalli">Tiruchirappalli</option>
+                                    <option value="bareilly">Bareilly</option>
+                                    <option value="moradabad">Moradabad</option>
+                                    <option value="mysore">Mysore</option>
+                                    <option value="tiruppur">Tiruppur</option>
+                                    <option value="gurgaon">Gurgaon</option>
+                                    <option value="aligarh">Aligarh</option>
+                                    <option value="jalandhar">Jalandhar</option>
+                                    <option value="bhubaneswar">Bhubaneswar</option>
+                                    <option value="salem">Salem</option>
+                                    <option value="mira-bhayandar">Mira-Bhayandar</option>
+                                    <option value="warangal">Warangal</option>
+                                    <option value="guntur">Guntur</option>
+                                    <option value="bhiwandi">Bhiwandi</option>
+                                    <option value="saharanpur">Saharanpur</option>
+                                    <option value="gorakhpur">Gorakhpur</option>
+                                    <option value="bikaner">Bikaner</option>
+                                    <option value="amravati">Amravati</option>
+                                    <option value="noida">Noida</option>
+                                    <option value="jamshedpur">Jamshedpur</option>
+                                    <option value="bhilai">Bhilai</option>
+                                    <option value="cuttack">Cuttack</option>
+                                    <option value="firozabad">Firozabad</option>
+                                    <option value="kochi">Kochi</option>
+                                    <option value="nellore">Nellore</option>
+                                    <option value="bhavnagar">Bhavnagar</option>
+                                    <option value="dehradun">Dehradun</option>
+                                    <option value="durgapur">Durgapur</option>
+                                    <option value="asansol">Asansol</option>
+                                    <option value="rukla">Rukla</option>
+                                </select>
+                                <label for="city" class="form-label">Select City</label>
+                               </div>
+                        </div>     
+                    </div>
+
+                
+                           
+
+
+                        <!-- Admin Email -->
+
+                    <header><h5 class="mt-3">Email</h4></header>
+                        <div class="form-floating">
+                            <input type="email" class="form-control form-control-md" id="email" name="email" placeholder="">
+                            <label for="email" class="form-label ">Enter Email</label>
+                        </div>
+
+
+
+                        <!-- Admin Username -->
+
+                    <header><h5 class="mt-3">Username</h4></header>
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-md" id="username" name="username" placeholder="">
+                            <label for="username" class="form-label ">Enter Username</label>
+                        </div>
+
+
+
+                        <!-- Admin Password -->
+
+                    <header><h5 class="mt-3">Password</h4></header>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control form-control-md" id="pass" name="pass" placeholder="">
+                            <label for="pass" class="form-label ">Enter Password</label>
+                        </div>
+
+
+                    <!-- Admin Image Upload -->
+                    
+                         <header><h5 class="mt-2"> Upload Image</h4></header>
+                            <div class="mb-1">
+                                <input type="file" class="form-control form-control-lg" id="image" name="image" disabled>
+                               
+                            </div>    
+                    
+
+
+                      <!-- Registration Submit -->
+                        <div class="d-flex justify-content-center  ">  
+                           <input  type="submit" class="btn btn-config" value="Register">
+                        </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
